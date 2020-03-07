@@ -745,7 +745,8 @@ const echo = function () {
     for (let [key, value] of Object.entries(tmp)) {
         document.write(`<h2>${key}</h2>`)
         value.forEach(function(title, i){
-            document.write(`<p>${i}. ${title}</p>`)
+            const no = i+1
+            document.write(`<p>${no}. ${title}</p>`)
         })
     }
 
