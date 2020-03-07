@@ -742,5 +742,7 @@ const echo = function () {
     for (let [key, value] of Object.entries(tmp)) {
         console.log(`${key}: ${value}`);
     }
-    
+
 }
+
+echo();
