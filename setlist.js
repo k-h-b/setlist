@@ -736,6 +736,7 @@ const echo = function () {
     ]
     let tmp = {}
     json.forEach(function (song) {
+        console.log(song)
         tmp[song.author].push(song.title)
     })
 
