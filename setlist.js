@@ -736,7 +736,9 @@ const echo = function () {
     ]
     let tmp = {}
     json.forEach(function (song) {
-        console.log(song)
+        if(!Array.isArray(tmp[song.author])){
+            tmp[song.author] = []
+        }
         tmp[song.author].push(song.title)
     })
 
