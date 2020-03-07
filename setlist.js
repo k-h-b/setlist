@@ -743,7 +743,7 @@ const echo = function () {
     })
 
     for (let [key, value] of Object.entries(tmp)) {
-        document.write(`<h1>${key}</h1>`)
+        document.write(`<h2>${key}</h2>`)
         value.forEach(function(title){
             document.write(`<p>${title}</p>`)
         })
